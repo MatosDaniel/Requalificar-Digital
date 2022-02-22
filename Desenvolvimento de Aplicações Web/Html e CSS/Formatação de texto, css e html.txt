@@ -1,0 +1,40 @@
+flex-start
+flex-end
+center
+space-between
+space-around
+------------------
+align-items:
+baseline
+stretch
+------------------
+flex-direction:
+row: Items are placed the same as the text direction.
+row-reverse: Items are placed opposite to the text direction.
+column: Items are placed top to bottom.
+column-reverse: Items are placed bottom to top.
+--------------------
+flex-wrap:
+nowrap: Every item is fit to a single line.
+wrap: Items wrap around to additional lines.
+wrap-reverse: Items wrap around to additional lines in reverse.
+-------------------------
+align-content:
+flex-start: Lines are packed at the top of the container.
+flex-end: Lines are packed at the bottom of the container.
+center: Lines are packed at the vertical center of the container.
+space-between: Lines display with equal spacing between them.
+space-around: Lines display with equal spacing around them.
+stretch: Lines are stretched to fit the container.
+-------------------
+grid-column-start: 3
+grid-column-end: 4
+: span
+grid-column: 4/6
+
+
+
+
+-----------
+
+Bootstrap - livraria que contem os modelos que pudemos alterar e copiar de CSS.
