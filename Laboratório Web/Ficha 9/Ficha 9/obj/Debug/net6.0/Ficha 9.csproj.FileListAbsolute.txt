@@ -1,0 +1,27 @@
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\appsettings.json
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\Ficha 9.exe
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\Ficha 9.deps.json
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\Ficha 9.runtimeconfig.json
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\Ficha 9.dll
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\ref\Ficha 9.dll
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\Ficha 9.pdb
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.csproj.AssemblyReference.cache
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.AssemblyInfoInputs.cache
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.AssemblyInfo.cs
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.csproj.CoreCompileInputs.cache
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\scopedcss\bundle\Ficha 9.styles.css
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.csproj.CopyComplete
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.dll
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\ref\Ficha 9.dll
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.pdb
+C:\Users\Net19\Desktop\AulasProfDavid\Ficha 9\Ficha 9\obj\Debug\net6.0\Ficha 9.genruntimeconfig.cache
