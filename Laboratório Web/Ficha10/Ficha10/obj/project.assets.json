@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha 9\\Ficha 9\\Ficha 9.csproj",
-      "projectName": "Ficha 9",
-      "projectPath": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha 9\\Ficha 9\\Ficha 9.csproj",
+      "projectUniqueName": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha10\\Ficha10\\Ficha10.csproj",
+      "projectName": "Ficha10",
+      "projectPath": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha10\\Ficha10\\Ficha10.csproj",
       "packagesPath": "C:\\Users\\Net19\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha 9\\Ficha 9\\obj\\",
+      "outputPath": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha10\\Ficha10\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Net19\\AppData\\Roaming\\NuGet\\NuGet.Config",

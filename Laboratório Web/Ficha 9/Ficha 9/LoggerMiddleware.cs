@@ -9,18 +9,13 @@
         }
         public async Task InvokeAsync(HttpContext context)
         {
-            string before = String.Format("Before: {0}", context.Request.Path);
+            string before = String.Format($"Before: {context.Request.Path}, {context.Request.Method}, {DateTime.Now}\n");
             File.AppendAllText("logs.txt", before);
 
             await next(context);
 
-            string after = String.Format("After: {0}", context.Request.Method);
+            string after = String.Format($"After: {context.Request.Path}, {context.Request.Method}, {DateTime.Now}\n");
             File.AppendAllText("logs.txt", after);
         }
-        /* public static IApplicationBuilder UseLoggerMiddleware(
-        this IApplicationBuilder builder)
-        {
-            return builder.UseMiddleware<LoggerMiddleware>();
-        } *
     }
 }

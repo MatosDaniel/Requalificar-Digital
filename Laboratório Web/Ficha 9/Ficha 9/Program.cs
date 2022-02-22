@@ -22,8 +22,12 @@ app.UseHttpsRedirection();
 app.MapGet("/", () =>
 {
     return Results.Ok("Default");
-});  
+});
 
+app.MapDelete("/", () =>
+{
+    return Results.Ok("Delete");
+});
 app.Use(async (context, next) =>
 {
     Debug.WriteLine("Before first middleware");
@@ -41,7 +45,7 @@ app.Use(async (context, next) =>
 
 app.UseCustomMiddleware();
 
-app.UseLoggerMidleware();
+app.UseLoggerMiddleware();
 
 app.Run();
 
