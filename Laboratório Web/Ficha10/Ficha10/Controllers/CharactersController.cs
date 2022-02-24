@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace Ficha10.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CharactersController : ControllerBase
     {
@@ -45,7 +45,7 @@ namespace Ficha10.Controllers
                 characters.CharactersList.Add(character);
             }
 
-            return Ok(character.Id);
+            return Ok(character);
         }
 
         
@@ -121,23 +121,23 @@ namespace Ficha10.Controllers
             }
         }
         
-        [HttpGet("/download")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [HttpGet("/download", Name = "DownloadChars")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Characters))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult Download()
         {
-            string jsonAllCharas = JsonSerializer.Serialize<Characters>(characters);
-            File.WriteAllText("./allCharas.json", jsonAllCharas);
+            string jsonAllCharas = JsonSerializer.Serialize(characters);
+            System.IO.File.WriteAllText("JsonFiles/allCharas.json", jsonAllCharas);
 
             try
             {
-                byte[] bytes = File.ReadAllBytes("./allCharas.json");
-                return File(bytes, null, "characters.json");
+                byte[] bytes = System.IO.File.ReadAllBytes("./JsonFiles/allCharas.json");
+                return File(bytes, "application/json", "JsonFiles/characters.json");
             }
             catch (FileNotFoundException e)
             {
                 return NotFound(e.Message);
             }
-        }
+        } 
     }
 }

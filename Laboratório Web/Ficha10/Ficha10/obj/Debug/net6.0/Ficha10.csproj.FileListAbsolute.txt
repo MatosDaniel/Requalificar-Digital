@@ -27,3 +27,4 @@ C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha10\Ficha10\ob
 C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha10\Ficha10\obj\Debug\net6.0\ref\Ficha10.dll
 C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.pdb
 C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.genruntimeconfig.cache
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha10\Ficha10\bin\Debug\net6.0\JsonFiles\allEmps.json

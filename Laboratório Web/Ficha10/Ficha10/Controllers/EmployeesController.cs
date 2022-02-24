@@ -1,6 +1,7 @@
 using Ficha10.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
+using System.Text.Json;
 
 namespace Ficha10.Controllers
 {
@@ -39,7 +40,7 @@ namespace Ficha10.Controllers
                 employees.EmployeesList.Add(employee);
             }
 
-            return Ok(employee.UserId);
+            return Ok(employee);
         }
 
 
@@ -99,12 +100,12 @@ namespace Ficha10.Controllers
             }
         }
         
-        [HttpGet("{region}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string))]
+        [HttpGet("region/{region}", Name = "GetByRegion")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Employee))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult Get(string region)
         {
-            List<Employee> emp = employees.EmployeesList.FindAll(e=> e.Region == region);
+            Employee? emp = employees.EmployeesList.Find(e=> e.Region == region);
             if(emp == null)
             {
                 return NotFound($"Não foi encontrado ninguem de {region}");
@@ -114,6 +115,25 @@ namespace Ficha10.Controllers
                 return Ok(emp);
             }
         }
-        //[HttpGet("download")]*/
+
+        
+        [HttpGet("download", Name = "GetDownload")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Employees))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult Download()
+        {
+            string jsonAllEmps = JsonSerializer.Serialize(employees);
+            System.IO.File.WriteAllText("JsonFiles/allEmps.json", jsonAllEmps);
+
+            try
+            {
+                byte[] bytes = System.IO.File.ReadAllBytes("JsonFiles/allEmps.json");
+                return File(bytes, "application/json", "JsonFiles/employees.json");
+            }
+            catch (FileNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
+        } 
     }
 }
