@@ -6,7 +6,7 @@ namespace Ficha10.Models
     {
         public static Employees LoadEmployeesJson()
         {
-            string text = File.ReadAllText(".JsonFiles/employees.json");
+            string text = File.ReadAllText("./JsonFiles/employees.json");
             Employees emp = JsonSerializer.Deserialize<Employees>(text);
             return emp;
         }
@@ -14,7 +14,7 @@ namespace Ficha10.Models
 
         public static Characters LoadCharactersJson()
         {
-            string text = File.ReadAllText("characters.json");
+            string text = File.ReadAllText("./JsonFiles/characters.json");
             Characters characters = JsonSerializer.Deserialize<Characters>(text);
             return characters;
         }

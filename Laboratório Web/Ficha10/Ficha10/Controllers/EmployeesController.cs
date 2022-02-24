@@ -74,8 +74,8 @@ namespace Ficha10.Controllers
                 return Ok(emp);
             }
         }
-
-        [HttpGet("{id}")]
+        
+        [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Employee))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult Put(int id, [FromBody] Employee employee)
@@ -98,7 +98,7 @@ namespace Ficha10.Controllers
                 return Ok(emp);
             }
         }
-
+        
         [HttpGet("{region}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -114,6 +114,6 @@ namespace Ficha10.Controllers
                 return Ok(emp);
             }
         }
-        //[HttpGet("download")]
+        //[HttpGet("download")]*/
     }
 }

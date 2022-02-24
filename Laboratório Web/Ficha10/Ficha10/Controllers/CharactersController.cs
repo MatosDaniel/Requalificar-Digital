@@ -1,6 +1,7 @@
 ﻿using Ficha10.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
+using System.Text.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,14 +18,14 @@ namespace Ficha10.Controllers
         {
             characters = JsonLoader.LoadCharactersJson();
         }
-
+        
         // GET: api/<CharactersController>
         [HttpGet]
         public IEnumerable<Character> Get()
         {
             return characters.CharactersList;
         }
-
+        
         // POST api/<CharactersController>
         [HttpPost]
         [Consumes(MediaTypeNames.Application.Json)]
@@ -47,7 +48,7 @@ namespace Ficha10.Controllers
             return Ok(character.Id);
         }
 
-
+        
         // DELETE api/<CharactersController>/5
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -64,7 +65,7 @@ namespace Ficha10.Controllers
                 return Ok($"ID: {id} foi removido.");
             }
         }
-
+        
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -80,7 +81,7 @@ namespace Ficha10.Controllers
                 return Ok(chara);
             }
         }
-
+        
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Character))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -101,7 +102,7 @@ namespace Ficha10.Controllers
 
                 return Ok(chara);
             }
-        }
+        } 
 
         [HttpGet("/jedi")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -117,6 +118,25 @@ namespace Ficha10.Controllers
             else
             {
                 return Ok(jedi);
+            }
+        }
+        
+        [HttpGet("/download")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult Download()
+        {
+            string jsonAllCharas = JsonSerializer.Serialize<Characters>(characters);
+            File.WriteAllText("./allCharas.json", jsonAllCharas);
+
+            try
+            {
+                byte[] bytes = File.ReadAllBytes("./allCharas.json");
+                return File(bytes, null, "characters.json");
+            }
+            catch (FileNotFoundException e)
+            {
+                return NotFound(e.Message);
             }
         }
     }

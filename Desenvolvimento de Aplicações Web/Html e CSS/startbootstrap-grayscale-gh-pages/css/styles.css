@@ -11791,3 +11791,23 @@ body {
 .social-login__icon:hover {
 	transform: scale(1.5);	
 }
+
+.minititles{
+  margin-left: 3%;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 15pt;
+}
+
+.addtext{
+  margin-left: 5%;
+  font-size: 14pt;
+}
+
+.caixaTexto{
+  margin-left: 5%;
+}
+
+.auto_height { /* CSS */
+  width: 100%;
+}
