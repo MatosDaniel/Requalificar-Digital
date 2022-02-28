@@ -1,0 +1,54 @@
+body{
+    background-color: #cecece;
+}
+h2{
+    color: #093426;
+}
+#healthBar {
+    height: 30px;
+    width: 500px;
+    background-color:lightgrey;
+    border-radius: 23px;
+    border: 2px solid grey;
+}
+@-webkit-keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: .1; }
+    100% { opacity: 1; }
+}
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: .1; }
+    100% { opacity: 1; }
+}
+#myHealth{
+    height:30px;
+    width: 100%;
+    background-color:green;
+    border-radius: 23px;
+    -webkit-animation: flash linear 2s infinite;
+    animation: flash linear 2s infinite;
+    text-align: center;
+}
+
+#player2{
+    justify-content: right;
+}
+
+#myHealth2{
+    height:30px;
+    width: 100%;
+    background-color:green;
+    border-radius: 23px;
+    -webkit-animation: flash linear 2s infinite;
+    animation: flash linear 2s infinite;
+    text-align: center;
+}
+
+#healthBar2{
+    height: 30px;
+    width: 500px;
+    background-color:lightgrey;
+    border-radius: 23px;
+    border: 2px solid grey;
+}

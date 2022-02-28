@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <scrip src="jsTPC.js"></scrip>
+        <link rel="stylesheet" href="cssTPC.css">
+    </head>
+    <body>
+        <script>
+            function adicionar() {
+                var valor = document.getElementById("counter").textContent;
+                valor = document.getElementById("counter").textContent = parseInt(valor) + 1;
+                verifica(valor);
+            }
+
+            function remover() {
+                var valor = document.getElementById("counter").textContent;
+                valor = document.getElementById("counter").textContent = parseInt(valor) - 1;
+                verifica(valor);
+            }
+
+            function verifica(valor){
+                if(valor >= 0 ){
+                    document.getElementById("counter").style.color = "green";
+                } else {
+                    document.getElementById("counter").style.color = "red";
+                }
+            }
+
+            function reset(){
+                var valor = document.getElementById("counter").textContent = 0;
+                verifica(valor);
+            }
+        </script>
+        <h2>Counter</h2>
+        <h3 id="counter"> 0 </h3>
+        <button id="Add" onclick="adicionar()"> Add </button>
+        <button id="Decrease" onclick="remover()"> Decrease </button>
+        <button id="Reset" onclick="reset()"> Reset </button>
+    </body>
+</html>

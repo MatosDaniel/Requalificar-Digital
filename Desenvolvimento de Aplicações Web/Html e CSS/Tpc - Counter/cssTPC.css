@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    margin-top: 20%;
+    background-color: rgb(30, 167, 160);
+}
+
+#counter {
+    font-size: 25pt;
+    color: green;
+}
+
+h2{
+    text-decoration: underline;
+    color: rgb(136, 37, 167);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+}
+
+#Add, #Decrease, #Reset
+{
+    margin-top: 1%;
+    font-size: 15pt;
+}

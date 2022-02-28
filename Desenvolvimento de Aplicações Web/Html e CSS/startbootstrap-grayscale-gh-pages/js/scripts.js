@@ -6,6 +6,10 @@
 //
 // Scripts
 // 
+$(document).ready(function(){
+alert("document is ready");
+});
+
 
 window.addEventListener('DOMContentLoaded', event => {
 
