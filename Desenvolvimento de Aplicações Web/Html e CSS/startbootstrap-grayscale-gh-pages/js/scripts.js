@@ -5,10 +5,7 @@
 */
 //
 // Scripts
-// 
-$(document).ready(function(){
-alert("document is ready");
-});
+//
 
 
 window.addEventListener('DOMContentLoaded', event => {
@@ -61,3 +58,32 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+$(document).ready(function() {
+    $("#basic-form").validate({
+      rules: {
+        email: {
+          required: true,
+          email: true
+        },
+        email: {
+          email: "The email should be in the format: abc@domain.tld"
+        },
+      }
+    });
+  });
+
+function passFunction() {
+    let x = document.getElementByID("password").value;
+
+    let text;
+
+    if (x != "12345")
+    {
+        text = "Password errada!";
+    }
+    else{
+        text = "Password correcta!"
+    }
+    document.getElementById("erro").innerHTML = text;   
+}

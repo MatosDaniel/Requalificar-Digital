@@ -42,15 +42,25 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase " style="font-size: 40pt">Faça login!</h1>
-                        <div class="login__field">
-                            <i class="login__icon fas fa-user"></i>
-                            <input type="text" class="login__input" placeholder="User name / Email" style="color: rgb(230, 230, 230)">
-                        </div>
-                        <div class="login__field">
-                            <i class="login__icon fas fa-lock"></i>
-                            <input type="password" class="login__input" placeholder="Password" style="color: rgb(230, 230, 230)">
-                        </div>
-                        <a class="btn btn-primary" href="#about">Login</a>
+                        <form  id="basic-form" action="" method="post">
+                            <div class="login__field">
+                                <p>
+                                    <i class="login__icon fas fa-user"></i>
+                                    <label for="email"></label>
+                                    <input id= "email" name ="email" type="text" class="login__input" placeholder="Email" style="color: rgb(230, 230, 230)">
+                                </p>
+                            </div>
+                            <div class="login__field">
+                                <p>
+                                    <i class="login__icon fas fa-lock"></i>
+                                    <input id="password" class="login__input" placeholder="Password" style="color: rgb(230, 230, 230)">
+                                </p>    
+                            </div>
+                            <p>
+                                <button type="button" class="btn btn-primary" class="submit" type="submit" onclick="passFunction()">Login</button>
+                            </p>
+                            <p id="erro"></p>
+                        </form>
                     </div>
                 </div>
             </div>
