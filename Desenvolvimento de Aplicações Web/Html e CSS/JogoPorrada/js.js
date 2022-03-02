@@ -9,7 +9,7 @@ function hit(){
     else
     {
         document.getElementById("myHealth2").innerHTML = "DEAD";
-        document.getElementById("myHealth2").style.marginLeft = "50%";
+        document.getElementById("myHealth2").style.marginLeft = "40%";
         document.getElementById("myHealth2").style.backgroundColor = "transparent";
         alert("Player 1 won!")
     }
@@ -33,7 +33,7 @@ function hit(){
     else
     {
         document.getElementById("myHealth").innerHTML = "DEAD";
-        document.getElementById("myHealth").style.marginLeft = "50%";
+        document.getElementById("myHealth").style.marginLeft = "40%";
         document.getElementById("myHealth").style.backgroundColor = "transparent";
         alert("Player 2 won!")
     }
@@ -84,7 +84,7 @@ function hit2(){
     else
     {
         document.getElementById("myHealth").innerHTML = "DEAD";
-        document.getElementById("myHealth").style.marginLeft = "50%";
+        document.getElementById("myHealth").style.marginLeft = "40%";
         document.getElementById("myHealth").style.backgroundColor = "transparent";
         alert("Player 2 won!")
     }
@@ -108,7 +108,7 @@ function hit2(){
     else
     {
         document.getElementById("myHealth2").innerHTML = "DEAD";
-        document.getElementById("myHealth2").style.marginLeft = "50%";
+        document.getElementById("myHealth2").style.marginLeft = "40%";
         document.getElementById("myHealth2").style.backgroundColor = "transparent";
         alert("Player 1 won!")
     }
