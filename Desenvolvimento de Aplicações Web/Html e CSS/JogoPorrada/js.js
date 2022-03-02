@@ -10,8 +10,9 @@ function hit(){
     {
         document.getElementById("myHealth2").innerHTML = "DEAD";
         document.getElementById("myHealth2").style.marginLeft = "40%";
-        document.getElementById("myHealth2").style.backgroundColor = "transparent";
-        alert("Player 1 won!")
+        document.getElementById("myHealth2").style.backgroundColor = "white";
+        alert("Player 1 won!");
+        location.reload();
     }
     if (health2 < 350 && health2 >199)
     {
@@ -34,8 +35,9 @@ function hit(){
     {
         document.getElementById("myHealth").innerHTML = "DEAD";
         document.getElementById("myHealth").style.marginLeft = "40%";
-        document.getElementById("myHealth").style.backgroundColor = "transparent";
-        alert("Player 2 won!")
+        document.getElementById("myHealth").style.backgroundColor = "white";
+        alert("Player 2 won!");
+        location.reload();
     }
     if (health1 < 350 && health1 >199)
     {
@@ -85,8 +87,9 @@ function hit2(){
     {
         document.getElementById("myHealth").innerHTML = "DEAD";
         document.getElementById("myHealth").style.marginLeft = "40%";
-        document.getElementById("myHealth").style.backgroundColor = "transparent";
-        alert("Player 2 won!")
+        document.getElementById("myHealth").style.backgroundColor = "white";
+        alert("Player 2 won!");
+        location.reload();
     }
     if (health1 < 350 && health1 >199)
     {
@@ -109,8 +112,9 @@ function hit2(){
     {
         document.getElementById("myHealth2").innerHTML = "DEAD";
         document.getElementById("myHealth2").style.marginLeft = "40%";
-        document.getElementById("myHealth2").style.backgroundColor = "transparent";
-        alert("Player 1 won!")
+        document.getElementById("myHealth2").style.backgroundColor = "white";
+        alert("Player 1 won!");
+        location.reload();
     }
     if (health2 < 350 && health2 >199)
     {
