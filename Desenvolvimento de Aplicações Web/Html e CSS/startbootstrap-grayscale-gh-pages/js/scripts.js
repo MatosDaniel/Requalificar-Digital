@@ -73,17 +73,52 @@ $(document).ready(function() {
     });
   });
 
-function passFunction() {
-    let x = document.getElementByID("password").value;
+function registerFunction() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var passwordRe = document.getElementById("passwordRe").value;
 
-    let text;
-
-    if (x != "12345")
+    if(password == 0 || email == 0)
+    {   
+        alert("Todos os campos precisam de ser preenchidos");
+        return false
+    }
+    else if(password != passwordRe)
     {
-        text = "Password errada!";
+        alert("As passwords precisam de ser iguais");
+        return false
+    }
+    else if (password == passwordRe){
+        alert("Registo efectuado com sucesso");
+        return true
+    }
+    else {
+        alert("Algo deu erro e nós também não sabemos o que foi");
+        return false
+    }
+}
+
+function loginFunction(){
+    var username = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if(username == 0)
+    {
+        alert("Insira o seu email");
+        return false
+    }
+    else if(password == 0)
+    {
+        alert("Insira a sua password");
+    }
+    else if(username == "daniel@gmail.com" || password == "1234")
+    {
+        alert("Login efectuado com sucesso");
+        return true
     }
     else{
-        text = "Password correcta!"
+        alert("Os dados inseridos estão incorrectos");
+        return false
     }
-    document.getElementById("erro").innerHTML = text;   
+
 }

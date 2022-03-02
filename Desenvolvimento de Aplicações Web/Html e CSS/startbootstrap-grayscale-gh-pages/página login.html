@@ -42,7 +42,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase " style="font-size: 40pt">Faça login!</h1>
-                        <form  id="basic-form" action="" method="post">
+                        <form action="index.html" method="post" onsubmit="return loginFunction()">
                             <div class="login__field">
                                 <p>
                                     <i class="login__icon fas fa-user"></i>
@@ -57,9 +57,8 @@
                                 </p>    
                             </div>
                             <p>
-                                <button type="button" class="btn btn-primary" class="submit" type="submit" onclick="passFunction()">Login</button>
+                                <input class="btn btn-primary" class="button" type="submit" value="Login">
                             </p>
-                            <p id="erro"></p>
                         </form>
                     </div>
                 </div>
