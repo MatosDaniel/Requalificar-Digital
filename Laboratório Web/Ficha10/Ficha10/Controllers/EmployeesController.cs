@@ -11,6 +11,7 @@ namespace Ficha10.Controllers
     {
         private Employees employees;
 
+     
         public EmployeesController()
         {
             employees = JsonLoader.LoadEmployeesJson();
@@ -22,7 +23,7 @@ namespace Ficha10.Controllers
             return employees.EmployeesList;
         }
 
-        [HttpPost]
+        [HttpPost(Name = "PostEmp")]
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -60,8 +61,8 @@ namespace Ficha10.Controllers
             }
         }
 
-        [HttpGet("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [HttpGet("{id}", Name = "GetById")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Employee))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult Get(int id)
         {
@@ -76,7 +77,7 @@ namespace Ficha10.Controllers
             }
         }
         
-        [HttpPut("{id}")]
+        [HttpPut("{id}", Name ="PutById")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Employee))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult Put(int id, [FromBody] Employee employee)
@@ -103,7 +104,7 @@ namespace Ficha10.Controllers
         [HttpGet("region/{region}", Name = "GetByRegion")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Employee))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult Get(string region)
+        public IActionResult GetByRegion(string region)
         {
             Employee? emp = employees.EmployeesList.Find(e=> e.Region == region);
             if(emp == null)
@@ -120,9 +121,9 @@ namespace Ficha10.Controllers
         [HttpGet("download", Name = "GetDownload")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Employees))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult Download()
+        public IActionResult GetDownload()
         {
-            string jsonAllEmps = JsonSerializer.Serialize(employees);
+            string jsonAllEmps = JsonSerializer.Serialize<Employees>(employees);
             System.IO.File.WriteAllText("JsonFiles/allEmps.json", jsonAllEmps);
 
             try

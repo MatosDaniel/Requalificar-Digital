@@ -1,3 +1,6 @@
+using Ficha10;
+using Ficha10.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//builder.Services.AddSingleton<IEmployees, Employees>();
+//builder.Services.AddSingleton<ICharacters, Characters>();
+
 
 var app = builder.Build();
 

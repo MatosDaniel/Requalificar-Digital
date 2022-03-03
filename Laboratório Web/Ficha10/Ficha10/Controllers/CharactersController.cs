@@ -120,13 +120,29 @@ namespace Ficha10.Controllers
                 return Ok(jedi);
             }
         }
-        
-        [HttpGet("/download", Name = "DownloadChars")]
+
+        [HttpGet("gender/{gender}", Name = "GetByGender")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Character))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult Get(string gender)
+        {
+            Character? chara = characters.CharactersList.Find(e => e.Gender == gender);
+            if (chara == null)
+            {
+                return NotFound($"Não foi encontrado ninguem do género {gender}");
+            }
+            else
+            {
+                return Ok(chara);
+            }
+        }
+
+        [HttpGet("download", Name = "DownloadChars")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Characters))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult Download()
+        public IActionResult DownloadChars()
         {
-            string jsonAllCharas = JsonSerializer.Serialize(characters);
+            string jsonAllCharas = JsonSerializer.Serialize<Characters>(characters);
             System.IO.File.WriteAllText("JsonFiles/allCharas.json", jsonAllCharas);
 
             try

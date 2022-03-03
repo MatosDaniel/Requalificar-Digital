@@ -1,0 +1,15 @@
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\bin\Debug\net6.0\Ficha11.exe
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\bin\Debug\net6.0\Ficha11.deps.json
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\bin\Debug\net6.0\Ficha11.runtimeconfig.json
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\bin\Debug\net6.0\Ficha11.dll
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\bin\Debug\net6.0\ref\Ficha11.dll
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\bin\Debug\net6.0\Ficha11.pdb
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\obj\Debug\net6.0\Ficha11.csproj.AssemblyReference.cache
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\obj\Debug\net6.0\Ficha11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\obj\Debug\net6.0\Ficha11.AssemblyInfoInputs.cache
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\obj\Debug\net6.0\Ficha11.AssemblyInfo.cs
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\obj\Debug\net6.0\Ficha11.csproj.CoreCompileInputs.cache
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\obj\Debug\net6.0\Ficha11.dll
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\obj\Debug\net6.0\ref\Ficha11.dll
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\obj\Debug\net6.0\Ficha11.pdb
+C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\Ficha11\Ficha11\obj\Debug\net6.0\Ficha11.genruntimeconfig.cache
