@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ficha11
 {
-    internal class Car : Vehicle
+    internal class Car : Vehicle, IVehicle
     {
         public int numberOfDoors;
         public int seats;
@@ -27,6 +27,11 @@ namespace Ficha11
         public override void Start()
         {
             throw new NotImplementedException();
+        }
+
+        public void Drive()
+        {
+            Console.WriteLine("Mãos no volante e pés nos pedais");
         }
     }
 }

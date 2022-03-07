@@ -8,8 +8,12 @@ namespace Ficha11
 {
     internal class VehicleTest
     {
-        public Car car;
+        private Car car { get; set; }
 
+        public VehicleTest(Car car)
+        {
+            this.car = car;
+        }
 
     }
 }

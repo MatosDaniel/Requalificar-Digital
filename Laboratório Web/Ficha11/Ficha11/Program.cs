@@ -8,3 +8,5 @@ Motorcycle motorcycle1 = new Motorcycle(Motorcycle.Type.ADVENTURE, 240, Vehicle.
 
 Console.WriteLine(car1.ToString());
 Console.WriteLine(motorcycle1.ToString());
+
+VehicleTest v1 = new VehicleTest(car1);

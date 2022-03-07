@@ -110,6 +110,7 @@ function loginFunction(){
     else if(password == 0)
     {
         alert("Insira a sua password");
+        return false
     }
     else if(username == "daniel@gmail.com" || password == "1234")
     {
