@@ -1,6 +1,6 @@
 ﻿namespace Ficha10.Models
 {
-    public class Characters
+    public class Characters : ICharacters
     {
         public Characters()
         {

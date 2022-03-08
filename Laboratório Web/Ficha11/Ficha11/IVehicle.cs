@@ -9,5 +9,7 @@ namespace Ficha11
     internal interface IVehicle
     {
         public abstract void Drive();
+
+        public abstract void Start();
     }
 }

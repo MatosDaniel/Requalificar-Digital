@@ -4,11 +4,10 @@ namespace Ficha10.Models
 {
     public class JsonLoader
     {
-        public static Employees LoadEmployeesJson()
+        public static List<Employee>? LoadEmployeesJson()
         {
-            string text = File.ReadAllText("./JsonFiles/employees.json");
-            Employees emp = JsonSerializer.Deserialize<Employees>(text);
-            return emp;
+            string text = System.IO.File.ReadAllText("./JsonFiles/employees.json");
+            return JsonSerializer.Deserialize<List<Employee>>(text);
         }
 
 

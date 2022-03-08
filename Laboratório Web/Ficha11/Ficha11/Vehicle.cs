@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ficha11
 {
-    public abstract class Vehicle
+    public abstract class Vehicle : IVehicle
     {
         public enum Travel
         {
@@ -38,6 +38,9 @@ namespace Ficha11
             return "Brand: " + brand + " Model: " + model + " Color: " + color + " ";
         }
 
-
+        public virtual void Drive()
+        {
+            Console.WriteLine("Mãos no volante e pés nos pedais");
+        }
     }
 }

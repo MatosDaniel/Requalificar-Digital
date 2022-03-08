@@ -1,4 +1,4 @@
-﻿namespace Ficha10
+﻿namespace Ficha10.Models
 {
     public class Employee
     {

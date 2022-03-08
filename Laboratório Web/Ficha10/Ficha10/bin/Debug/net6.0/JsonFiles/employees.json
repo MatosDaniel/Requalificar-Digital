@@ -1,5 +1,4 @@
-﻿{
-  "EmployeesList": [
+﻿[
     {
       "UserId": 1,
       "JobTitle": "Developer",
@@ -30,5 +29,4 @@
       "PhoneNumber": "2222222",
       "EmailAddress": "tin.jonson@learningcontainer.com"
     }
-  ]
-}
+]

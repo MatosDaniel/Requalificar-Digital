@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ficha11
 {
-    internal class Motorcycle : Vehicle, IVehicle
+    internal class Motorcycle : Vehicle
     {
         public enum Type{
             SPORT,
@@ -14,7 +14,7 @@ namespace Ficha11
             ADVENTURE
         }
         public Type type;
-        public int maxVelocity;
+        protected int maxVelocity;
 
         public Motorcycle(Type type, int maxVelocity, Travel travel, string color, double weight, string brand, string model, 
             Engine engine) : base(travel, color, weight, brand, model, engine)
@@ -35,7 +35,7 @@ namespace Ficha11
             throw new NotImplementedException();
         }
 
-        public void Drive()
+        public override void Drive()
         {
             Console.WriteLine("Mãos no guiador");
         }
