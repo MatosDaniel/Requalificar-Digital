@@ -28,17 +28,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(item, id) in itemsList">
-                    <td class="tg-0lax">{{item.quantity}}</td>
-                    <td class="tg-0lax">{{item.itemName}}</td>
-                    <td class="tg-0lax">
+                <tr v-for="(item, id) in itemsList">s
+                        <td v-if="item.edit == false" class="tg-0lax">{{item.quantity}}</td>
+                        <td v-else if="item.edit == true" class="tg-0lax">{{item.quantity}}</td>
+                        <td v-if="item.edit == false" class="tg-0lax">{{item.itemName}}</td>
+                        <td v-else if="item.edit == true" class="tg-0lax">{{item.itemName}}</td>
+                        <td class="tg-0lax">
                         <div v-if="item.edit == true">
-                            <button class="btn btn-primary" >Save</button>
+                            <button class="btn btn-primary" @click="changeButtonToEdit(item)">Save</button>
                         </div>
                         <div v-else if="item.edit == false">
-                            <button class="btn btn-primary" @click="item.edit == true">Edit</button>
+                            <button class="btn btn-primary" @click="changeButtonToSave(item)">Edit</button>
                         </div>
-                        <button class="btn btn-primary" >Delete</button>
+                        <button type="button" class="btn btn-primary" @click="removeItem(item)">Delete</button>
                     </td>
                 </tr>
             </tbody>
@@ -84,7 +86,14 @@
 
             createItem: function (quantity, itemName) {
 
+            },
 
+            changeButtonToSave: function(item) {
+                item.edit = true;
+            },
+
+            changeButtonToEdit: function(item) {
+                item.edit = false;
             },
         }
     })
