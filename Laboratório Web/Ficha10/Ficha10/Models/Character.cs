@@ -9,4 +9,4 @@
         public string Born { get; set; }
         public bool Jedi { get; set; }
     }
-}
+} 

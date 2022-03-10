@@ -5,8 +5,7 @@
         public Characters()
         {
             List<Character> CharactersList = new List<Character>();
-        }   
-
+        }
 
         public List<Character> CharactersList { get; set; }
     }

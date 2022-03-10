@@ -18,14 +18,14 @@ namespace Ficha10.Controllers
         {
             characters = JsonLoader.LoadCharactersJson();
         }
-        
+
         // GET: api/<CharactersController>
         [HttpGet]
         public IEnumerable<Character> Get()
         {
             return characters.CharactersList;
         }
-        
+
         // POST api/<CharactersController>
         [HttpPost]
         [Consumes(MediaTypeNames.Application.Json)]
@@ -48,7 +48,7 @@ namespace Ficha10.Controllers
             return Ok(character);
         }
 
-        
+
         // DELETE api/<CharactersController>/5
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -56,7 +56,7 @@ namespace Ficha10.Controllers
         public IActionResult Delete(int id)
         {
             var remove = characters.CharactersList.RemoveAll(e => e.Id == id);
-            if(remove == 0)
+            if (remove == 0)
             {
                 return NotFound($"ID: {id} não foi encontrado.");
             }
@@ -65,7 +65,7 @@ namespace Ficha10.Controllers
                 return Ok($"ID: {id} foi removido.");
             }
         }
-        
+
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -81,7 +81,7 @@ namespace Ficha10.Controllers
                 return Ok(chara);
             }
         }
-        
+
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Character))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -102,7 +102,7 @@ namespace Ficha10.Controllers
 
                 return Ok(chara);
             }
-        } 
+        }
 
         [HttpGet("/jedi")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -154,6 +154,6 @@ namespace Ficha10.Controllers
             {
                 return NotFound(e.Message);
             }
-        } 
+        }
     }
 }
