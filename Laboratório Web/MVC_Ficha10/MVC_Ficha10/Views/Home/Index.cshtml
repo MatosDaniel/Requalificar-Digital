@@ -1,0 +1,31 @@
+﻿@model Ficha10.Models.Characters;
+@{
+    ViewData["Title"] = "Home Page";
+    //cria uma váriavel que posso usar no html através do @nomevar
+    var nome = "Olá, sou o Daniel";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Sofia!</h1>
+    <p>Mostrar a data e hora de hoje: @DateTime.Now </p> <!--através do razor vamos buscar a função que entrega a hora e o dia atual-->
+    <h3>@nome</h3> <!--variavél que criamos no inicio-->
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<ul>
+    @foreach (var item in Model.CharactersList)
+    {
+    <li>
+        @Html.DisplayFor(modelItem => item.Id)
+        @Html.DisplayFor(modelItem => item.Name)
+        @Html.DisplayFor(modelItem => item.Gender)
+        @Html.DisplayFor(modelItem => item.Homeworld)
+        @Html.DisplayFor(modelItem => item.Born)
+        @Html.CheckBoxFor(modelItem => item.Jedi)
+
+        @Html.ActionLink("Edit", "Edit", new {id = item.Id})
+        @Html.ActionLink("Delete", "Delete", new {id = item.Id})
+        @Html.ActionLink("Details", "Details", new {id = item.Id})
+    </li>
+    }
+</ul>
