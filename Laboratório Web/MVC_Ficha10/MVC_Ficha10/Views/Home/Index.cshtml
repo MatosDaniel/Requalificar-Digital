@@ -5,27 +5,62 @@
     var nome = "Olá, sou o Daniel";
 }
 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0"></script>
+
 <div class="text-center">
-    <h1 class="display-4">Welcome Sofia!</h1>
-    <p>Mostrar a data e hora de hoje: @DateTime.Now </p> <!--através do razor vamos buscar a função que entrega a hora e o dia atual-->
+    <h1 class="display-4">Welcome!</h1>
+    <p>A hora e data actual é: @DateTime.Now </p> <!--através do razor vamos buscar a função que entrega a hora e o dia atual-->
     <h3>@nome</h3> <!--variavél que criamos no inicio-->
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-<ul>
-    @foreach (var item in Model.CharactersList)
+<table class="table table-dark">
+    <form>
+        <p>
+            Insira o ID: <input type="text"/>
+            <input type="submit" value="Procurar" style="background-color:black; color:white"/>
+        </p>
+    </form>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Homeworld</th>
+      <th scope="col">Born</th>
+      <th scope="col">Jedi</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+          @foreach (var item in Model.CharactersList)
     {
-    <li>
-        @Html.DisplayFor(modelItem => item.Id)
-        @Html.DisplayFor(modelItem => item.Name)
-        @Html.DisplayFor(modelItem => item.Gender)
-        @Html.DisplayFor(modelItem => item.Homeworld)
-        @Html.DisplayFor(modelItem => item.Born)
-        @Html.CheckBoxFor(modelItem => item.Jedi)
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.Id)</td>
+        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+        <td>@Html.DisplayFor(modelItem => item.Gender)</td>
+        <td>@Html.DisplayFor(modelItem => item.Homeworld)</td>
+        <td>@Html.DisplayFor(modelItem => item.Born)</td>
+        <td>@Html.CheckBoxFor(modelItem => item.Jedi)</td>
 
-        @Html.ActionLink("Edit", "Edit", new {id = item.Id})
-        @Html.ActionLink("Delete", "Delete", new {id = item.Id})
-        @Html.ActionLink("Details", "Details", new {id = item.Id})
-    </li>
+        <td>
+        <button type="button" class="btn btn-light" style="color:white">@Html.ActionLink("Edit", "Edit", new {id = item.Id})</button>
+        <button type="button" class="btn btn-light" style="color:white">@Html.ActionLink("Delete", "Delete", new {id = item.Id})</button>
+        </td>
+    </tr>
     }
-</ul>
+  </tbody>
+</table>
+<input type="text" placeholder="ID"/>
+<input type="text" placeholder="Name"/>
+<input type="text" placeholder="Gender"/>
+<input type="text" placeholder="Homeworld"/>
+<input type="text" placeholder="Born"/>
+<input type="checkbox" placeholder="ID"/>
+<button type="button" class="btn btn-primary">Adicionar</button>
+
+
+<script>
+
+</script>

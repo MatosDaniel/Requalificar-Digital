@@ -28,3 +28,33 @@ C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\MVC_Ficha10\MVC_Fi
 C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\JsonFiles\allEmps.json
 C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\JsonFiles\characters.json
 C:\Users\Net19\Desktop\Requalificar +Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\JsonFiles\employees.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\appsettings.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\JsonFiles\allCharas.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\JsonFiles\allEmps.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\JsonFiles\characters.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\JsonFiles\employees.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\MVC_Ficha10.staticwebassets.runtime.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\MVC_Ficha10.exe
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\MVC_Ficha10.deps.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\MVC_Ficha10.runtimeconfig.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\MVC_Ficha10.dll
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\ref\MVC_Ficha10.dll
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\bin\Debug\net6.0\MVC_Ficha10.pdb
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.csproj.AssemblyReference.cache
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.AssemblyInfoInputs.cache
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.AssemblyInfo.cs
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.csproj.CoreCompileInputs.cache
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.RazorAssemblyInfo.cache
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.RazorAssemblyInfo.cs
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\scopedcss\bundle\MVC_Ficha10.styles.css
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\scopedcss\projectbundle\MVC_Ficha10.bundle.scp.css
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.dll
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\ref\MVC_Ficha10.dll
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.pdb
+C:\Users\mauza\OneDrive\Ambiente de Trabalho\C#\Requalificar-Digital\Laboratório Web\MVC_Ficha10\MVC_Ficha10\obj\Debug\net6.0\MVC_Ficha10.genruntimeconfig.cache
