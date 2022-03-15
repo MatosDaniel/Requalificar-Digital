@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mauza\\.nuget\\packages\\": {}
+    "C:\\Users\\Net19\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\MVC_Ficha10\\MVC_Ficha10\\MVC_Ficha10.csproj",
+      "projectUniqueName": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\MVC_Ficha10\\MVC_Ficha10\\MVC_Ficha10.csproj",
       "projectName": "MVC_Ficha10",
-      "projectPath": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\MVC_Ficha10\\MVC_Ficha10\\MVC_Ficha10.csproj",
-      "packagesPath": "C:\\Users\\mauza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\MVC_Ficha10\\MVC_Ficha10\\obj\\",
+      "projectPath": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\MVC_Ficha10\\MVC_Ficha10\\MVC_Ficha10.csproj",
+      "packagesPath": "C:\\Users\\Net19\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\MVC_Ficha10\\MVC_Ficha10\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mauza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Net19\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
