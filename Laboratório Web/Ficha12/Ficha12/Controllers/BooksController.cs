@@ -11,6 +11,7 @@ namespace Ficha12.Controllers
     public class BooksController : ControllerBase
     {
         private readonly IBookService service;
+        private Book newBook;
 
         public BooksController(IBookService service)
         {
@@ -25,28 +26,50 @@ namespace Ficha12.Controllers
         }
 
         // GET api/<BooksController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{isbn}", Name = "GetByISBN")]
+        public IActionResult Get(string isbn)
         {
-            return "value";
+            Book? book = service.GetByISBN(isbn);
+            if(book == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(book);
+            }
+       
         }
 
         // POST api/<BooksController>
         [HttpPost("/books")]
-        public void Post([FromBody] string value)
+        public Book Post([FromBody] Book book)
         {
+            return service.Create(book);
         }
 
         // PUT api/<BooksController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{ISBN}", Name="Update ")]
+        public IActionResult Put(string ISBN, [FromBody] Book Book)
         {
+            Book? book = service.Update(ISBN, book);
+
         }
 
         // DELETE api/<BooksController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{ISBN}" , Name ="Delete")]
+        public IActionResult Delete(string ISBN)
         {
+            Book? book = service.DeleteByISBN(ISBN);
+            if(book == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok($"O livro com o ISBN {ISBN} foi eliminado");
+            }
+
         }
     }
 }

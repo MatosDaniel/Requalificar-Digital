@@ -11,8 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<LibraryContext>();
-builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddDbContext<LibraryContext>(); 
+builder.Services.AddScoped<IBookService, BookService>(); //damos a adicionar a interface Ibookservice atraves de dependecy injection
 
 var app = builder.Build();
 

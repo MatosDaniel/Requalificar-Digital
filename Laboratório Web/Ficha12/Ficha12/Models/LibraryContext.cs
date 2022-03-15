@@ -13,7 +13,7 @@ namespace Ficha12.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=apus.uma.pt;database=library;" + "user=dotnetUMa;password=UMaDotNet");
+            optionsBuilder.UseMySQL("server=localhost;database=library;" + "user=root;password=password");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
