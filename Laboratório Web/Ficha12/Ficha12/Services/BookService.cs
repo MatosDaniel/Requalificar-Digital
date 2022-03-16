@@ -14,11 +14,11 @@ namespace Ficha12.Services
             this.context = context;
         }
 
-        public Book Create([FromBody] Book newBook)
+        public Book Create(Book newBook)
         {
-            Publisher? pub = context.Publishers.Find(newBook.Publisher.ID);
+            Publisher pub = context.Publishers.Find(newBook.Publisher.ID);
 
-            if( pub is null)
+            if (pub is null)
             {
                 throw new NullReferenceException("Publisher does not exist");
             }
@@ -33,10 +33,12 @@ namespace Ficha12.Services
 
         public void DeleteByISBN(string ISBN)
         {
-            var book = context.Books.Include(p=>p.Publisher).SingleOrDefault(i=>i.ISBN == ISBN);
-
+            var book = context.Books.Find(ISBN);
+            if (book is not null)
+            {
                 context.Books.Remove(book);
                 context.SaveChanges();
+            }  
         }
 
         public IEnumerable<Book> GetAll()
@@ -54,18 +56,34 @@ namespace Ficha12.Services
         public void Update(string isbn, Book Book)
         {
             var book = GetByISBN(isbn);
-            book.Author = Book.Author;
-            book.Publisher = Book.Publisher;
-            book.Pages = Book.Pages;
-            book.Language = Book.Language;
-            book.Title = Book.Title;
-            context.SaveChanges();
+            if (book is null)
+            {
+                throw new NullReferenceException("Book does not exist");
+            }
+            else
+            {
+                book.Author = Book.Author;
+                book.Publisher = Book.Publisher;
+                book.Pages = Book.Pages;
+                book.Language = Book.Language;
+                book.Title = Book.Title;
+                context.SaveChanges();
+            }
 
         }
 
         public void UpdatePublisher(string isbn, int publisherId)
         {
-            throw new NotImplementedException();
+            Book? book = context.Books.Find(isbn);
+            Publisher? pub = context.Publishers.Find(publisherId);
+
+            if(book is null || pub is null)
+            {
+                throw new NullReferenceException("Book does not exist");
+            }
+
+            book.Publisher = pub;
+            context.SaveChanges();
         }
     }
 }
