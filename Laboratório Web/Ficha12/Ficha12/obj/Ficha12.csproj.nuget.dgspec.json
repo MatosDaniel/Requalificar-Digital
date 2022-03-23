@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj": {}
+    "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj": {
+    "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj",
+        "projectUniqueName": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj",
         "projectName": "Ficha12",
-        "projectPath": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj",
-        "packagesPath": "C:\\Users\\mauza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\obj\\",
+        "projectPath": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj",
+        "packagesPath": "C:\\Users\\Net19\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Net19\\Desktop\\Requalificar +Digital\\Laboratório Web\\Ficha12\\Ficha12\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mauza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Net19\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
