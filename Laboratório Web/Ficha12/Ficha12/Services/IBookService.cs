@@ -10,5 +10,6 @@ namespace Ficha12.Services
         public abstract void DeleteByISBN(string ISBN);
         public abstract void Update(string isbn, Book Book);
         public abstract void UpdatePublisher(string isbn, int publisherId);
+        public abstract IEnumerable<Book> GetByAuthor(string author);
     }
 }

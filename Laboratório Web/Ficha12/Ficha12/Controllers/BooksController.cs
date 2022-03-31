@@ -103,5 +103,14 @@ namespace Ficha12.Controllers
                 return NotFound();
             }
         }
+
+        [HttpGet("ByAuthor/{author}", Name = "GetByAuthor")]
+        public IEnumerable<Book> GetByAuthor(string author) //IActionResult - para produzir os códigos
+
+        {
+
+            return service.GetByAuthor(author);
+
+        }
     }
 }

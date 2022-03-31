@@ -85,5 +85,29 @@ namespace Ficha12.Services
             book.Publisher = pub;
             context.SaveChanges();
         }
+
+        public IEnumerable<Book> GetByAuthor(string author) //? - Pode ser nulo
+        {
+
+            var bookAuthor = context.Books.Include(p => p.Publisher).AsEnumerable().Where(p => p.Author == author);
+
+
+
+            if (bookAuthor is null)
+{
+                throw new NullReferenceException("Books with this author does not exist");
+
+            }
+
+
+
+            else
+            {
+
+                return (IEnumerable<Book>)bookAuthor;
+
+            }
+
+        }
     }
 }
