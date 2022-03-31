@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj": {}
+    "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\PraticarTeste_Futebol\\PraticarTeste_Futebol\\PraticarTeste_Futebol.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj": {
+    "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\PraticarTeste_Futebol\\PraticarTeste_Futebol\\PraticarTeste_Futebol.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj",
-        "projectName": "Ficha12",
-        "projectPath": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\Ficha12.csproj",
+        "projectUniqueName": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\PraticarTeste_Futebol\\PraticarTeste_Futebol\\PraticarTeste_Futebol.csproj",
+        "projectName": "PraticarTeste_Futebol",
+        "projectPath": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\PraticarTeste_Futebol\\PraticarTeste_Futebol\\PraticarTeste_Futebol.csproj",
         "packagesPath": "C:\\Users\\mauza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\Ficha12\\Ficha12\\obj\\",
+        "outputPath": "C:\\Users\\mauza\\OneDrive\\Ambiente de Trabalho\\C#\\Requalificar-Digital\\Laboratório Web\\PraticarTeste_Futebol\\PraticarTeste_Futebol\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mauza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,11 +40,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.3, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.3, )"
             },
@@ -54,7 +54,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.3.0, )"
+              "version": "[6.2.3, )"
             }
           },
           "imports": [
